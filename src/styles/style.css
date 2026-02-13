@@ -85,7 +85,9 @@ img {
   font-family: "Inter", sans-serif;
 }
 
-.contact__item delete {
+.contact-item .contact-item__delete {
   background-color: orangered;
+  padding: 8px;
   
+
 }

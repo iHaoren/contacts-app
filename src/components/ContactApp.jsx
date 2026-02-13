@@ -9,11 +9,11 @@ class ContactApp extends React.Component {
       contacts: getData(),
     };
 
-    this.onDeletehandler = this.onDeletehandler.bind(this);
+    this.onDeleteHandler = this.onDeleteHandler.bind(this);
   }
 
-  onDeletehandler(id) {
-    const contacts = this.state.contacts.filter(contact => contact.id !== id);
+  onDeleteHandler(id) {
+    const contacts = this.state.contacts.filter((contact) => contact.id !== id);
     this.setState({ contacts });
   }
 
@@ -23,7 +23,7 @@ class ContactApp extends React.Component {
         <h1>Daftar Kontak</h1>
         <ContactList
           contacts={this.state.contacts}
-          onDelete={this.onDeletehandler}
+          onDelete={this.onDeleteHandler}
         />
       </div>
     );
